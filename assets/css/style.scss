@@ -998,3 +998,19 @@ body{
         }
     }
 }
+
+.page-template__content-container{
+    margin-top: 30px;
+}
+
+.page-template__content-paragraph{
+    font-size: 16px;
+    color: $mainBlack;
+    margin-top: 20px;
+}
+
+.page-template__content-list{
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style: disc outside;
+}
