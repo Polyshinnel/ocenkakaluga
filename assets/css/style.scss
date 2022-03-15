@@ -1001,18 +1001,35 @@ body{
 
 .page-template__content-container{
     margin-top: 30px;
+
+    .sertificates-block__wrapper{
+        img{
+            width: 164px !important;
+        }
+    }
+
+
 }
 
 .page-template__content-paragraph{
     font-size: 16px;
     color: $mainBlack;
     margin-top: 20px;
+    line-height: 140%;
+
+    b{
+        font-weight: 700;
+    }
 }
 
 .page-template__content-list{
     margin-top: 20px;
     padding-left: 20px;
     list-style: disc outside;
+
+    li+li{
+        margin-top: 5px;
+    }
 }
 
 .contacts-phone__form{
@@ -1159,3 +1176,124 @@ body{
         width: 450px;
     }
 }
+
+.recall-wrapper{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.7);
+    left: 0;
+    top: 0;
+    display: none;
+
+
+    .recall-wrapper__block{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .recall-window{
+            padding: 25px 15px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: $mainGray;
+            width: 320px;
+            position: relative;
+        
+            .recall-window-input{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+        
+                label{
+                    color: $mainBlack;
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                    font-weight: 700;
+                }
+                input{
+                    width: 100%;
+                    height: 41px;
+                    padding: 0 10px;
+                    font-size: 14px;
+                    color: $mainBlack;
+                }
+        
+                textarea{
+                    width: 100%;
+                    height: 95px;
+                    padding: 10px;
+                    resize: none;
+                    font-size: 14px;
+                    font-family: sans-serif;
+                }
+            }
+        
+            .recall-window-input+.recall-window-input{
+                margin-top: 15px;
+            }
+        
+            .recall-window-agree{
+                display: flex;
+                align-items: center;
+                margin-top: 15px;
+        
+                p{
+                    font-size: 14px;
+                    margin-left: 8px;
+        
+                    a{
+                        color: $mainRed;
+                    }
+                }
+            }
+        
+            .recall-window-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                width: 160px;
+                height: 44px;
+                background: repeating-linear-gradient(to bottom right,rgba(255, 17, 0, 0.62) 0%,rgba(199, 21, 8, 0.62) 100%) #e82a1c;
+                box-shadow: inset 0px -3px 0px rgba(0,0,0,0.16), 0px 3px 5px rgba(8,8,8,0.60);
+                text-shadow: 0px 0px 1px #a13a02;
+                cursor: pointer;
+                transition: 0.3s all ease;
+        
+                p{
+                    color: #fff;
+                    font-weight: 700;
+                }
+            }
+
+            .close-block{
+                position: absolute;
+                top: -13px;
+                right: -13px;
+                width: 30px;
+                height: 30px;
+                background: #fff;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border: 1px solid #ccc;
+
+                img{
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
+
