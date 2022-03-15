@@ -1014,3 +1014,148 @@ body{
     padding-left: 20px;
     list-style: disc outside;
 }
+
+.contacts-phone__form{
+    padding: 25px 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $mainGray;
+
+    .contacts-phone__form-input{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        label{
+            color: $mainBlack;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        input{
+            width: 100%;
+            height: 41px;
+            padding: 0 10px;
+            font-size: 14px;
+            color: $mainBlack;
+        }
+
+        textarea{
+            width: 100%;
+            height: 95px;
+            padding: 10px;
+            resize: none;
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+    }
+
+    .contacts-phone__form-input+.contacts-phone__form-input{
+        margin-top: 15px;
+    }
+
+    .contacts-phone__form-agree{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+
+        p{
+            font-size: 14px;
+            margin-left: 8px;
+
+            a{
+                color: $mainRed;
+            }
+        }
+    }
+
+    .contacts-phone__form-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        width: 160px;
+        height: 44px;
+        background: repeating-linear-gradient(to bottom right,rgba(255, 17, 0, 0.62) 0%,rgba(199, 21, 8, 0.62) 100%) #e82a1c;
+        box-shadow: inset 0px -3px 0px rgba(0,0,0,0.16), 0px 3px 5px rgba(8,8,8,0.60);
+        text-shadow: 0px 0px 1px #a13a02;
+        cursor: pointer;
+        transition: 0.3s all ease;
+
+        p{
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}
+
+.contacts-phone__wrapper{
+    display: flex;
+    align-items: flex-start;
+
+    .contacts-phone__text{
+        width: 350px;
+
+        .contacts-phone__text-block+.contacts-phone__text-block{
+            margin-top: 40px;
+        }
+
+        .contacts-phone__text-block{
+            .contacts-phone__text-header{
+                display: flex;
+                align-items: center;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #ccc;
+
+                .contacts-phone__text-header-img{
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                h4{
+                    color: $mainBlack;
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .contacts-phone__text-info{
+            margin-top: 15px;
+
+            p{
+                font-size: 18px;
+
+                a{
+                    color: $mainRed;
+                    text-decoration: none;
+                }
+            }
+
+            p+p{
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .contacts-phone__form{
+        margin-left: 90px;
+        width: 310px;
+    }
+}
+
+.contacts-page__map{
+    margin-top: 50px;
+}
+
+.recall-page__wrapper{
+    .contacts-phone__form{
+        width: 450px;
+    }
+}
